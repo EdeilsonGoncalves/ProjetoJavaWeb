@@ -1,11 +1,13 @@
 package JavaWeb;
 
+import java.util.Locale;
+
 public class PrimeiraClasseJava {
 
 	/*Main é um método auto executável em Java*/
 	public static void main(String[] args) {
 		
-			
+		Locale.setDefault(Locale.US);	
 		
 		/*Escreve texto no console com*/
 		System.out.println("Meu primeiro programa em Java - do Curso Formação Java Web");
@@ -28,6 +30,10 @@ public class PrimeiraClasseJava {
 		System.out.println("ALTURA = " + String.format("%.2f", altura));
 		System.out.println("GENERO = " + genero);
 		System.out.println("NOME = " + nome);
+		System.out.println("");
+		
+		System.out.println("O candidato(a) tem o nome de "+ nome + ", sexo " + genero + ", ganha R$ " 
+		+ String.format("%.2f", salario) + " e tem " + idade + " anos.");
 		
 		
 		
